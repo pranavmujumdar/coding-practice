@@ -5,6 +5,16 @@ You may assume that each input would have exactly one solution, and you may not 
 >    Because nums[0] + nums[1] = 2 + 7 = 9,
 >    return [0, 1].
 
+## Psuedo Code
+>   function(list l1 of integers, Target value: int)
+>   map = (element:index)
+>   for(i = 0; i<length(l1))
+>       difference = target - l1[i]
+>       if(difference is in map)
+>           return (valueOfDifferenceFromMap, i)
+>       else
+>           add number and its index in map
+
 ## Python Solution
 ```py
 class Solution:
